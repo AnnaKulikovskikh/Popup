@@ -2,9 +2,11 @@ export default class Popover {
   init() {
     this.div = document.createElement('div');
     this.div.className = 'btn';
+    this.div.dataset.id = 'btn';
     this.div.textContent = 'Click me';
     document.body.appendChild(this.div);
     this.div.addEventListener('click', this.clicker);
+    console.log(this.clicker)
   }
 
   clicker() {

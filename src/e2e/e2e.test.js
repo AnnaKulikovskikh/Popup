@@ -22,7 +22,7 @@ describe('creation popup', () => {
 
   test('shoud create message', async () => {
     await page.goto(baseUrl);
-    const btn = await form.$('.btn');
+    const btn = await form.$('[data-id=btn]');
     btn.click();
     await page.waitFor('.message');
   });
