@@ -11,7 +11,7 @@ describe('creation popup', () => {
     browser = await puppeteer.launch({
       headless: false,
       slowMo: 500,
-      dextools: true,
+      devtools: true,
     });
     page = await browser.newPage();
   });
