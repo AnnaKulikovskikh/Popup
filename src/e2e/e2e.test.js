@@ -9,7 +9,7 @@ describe('creation popup', () => {
 
   beforeAll(async () => {
     browser = await puppeteer.launch({
-      headless: false,
+      headless: true,
       slowMo: 500,
       devtools: true,
     });
